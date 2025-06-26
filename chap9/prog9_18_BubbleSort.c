@@ -32,7 +32,7 @@ void bubble_sort(int arr[])
     for (int i = 1; (i < SIZE) && (!flag); i++) {
         flag = 1;
         for (int j = 0; j < SIZE - i; j++) {
-            if (arr[j] >= arr[j + 1]) {
+            if (arr[j] > arr[j + 1]) {
                 // printf("\n before: %d,%d ", arr[j], arr[j + 1]);
                 swap(&arr[j], &arr[j + 1]);
                 flag = 0;
