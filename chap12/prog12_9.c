@@ -13,8 +13,10 @@ int main(void)
         int math;       // 4 bytes
     } student;
 
-    f1 = open("C:\\Users\\sam88\\Documents\\development\\score.bin",
-              O_RDONLY | O_BINARY);
+    f1 = open(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\score.bin",
+        O_RDONLY | O_BINARY);
     if (f1 != -1) {
         read(f1, &student, sizeof(student));
 

@@ -12,7 +12,10 @@ int main(void)
     char str[MAX], ch; /* 宣告字元變數ch，用來接收讀取的字元 */
     int i = 0;
 
-    fptr = fopen("C:\\Users\\sam88\\Documents\\development\\output.txt", "a");
+    fptr = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\output.txt",
+        "a");
 
     printf("請輸入字串，按下ENTER鍵結束輸入:\n");
 

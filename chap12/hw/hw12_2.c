@@ -9,7 +9,11 @@ int main(void)
     FILE *fptr; /* 宣告指向檔案的指標fptr */
     char str[LENGTH];
 
-    fptr = fopen("C:\\Users\\sam88\\Documents\\development\\data.txt", "r");
+    fptr = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\C-"
+        "langugage\\chap12\\data\\data.txt",
+        "r");
     if (fptr != NULL) {
         printf("Each time only read 5 char\n");
         while (fgets(str, LENGTH, fptr) != NULL) {
@@ -26,8 +30,14 @@ int main(void)
     char ch;             /* 宣告字元變數ch，用來接收讀取的字元 */
     int count = 0;
 
-    fptr1 = fopen("C:\\Users\\sam88\\Documents\\development\\data.txt", "r");
-    fptr2 = fopen("C:\\Users\\sam88\\Documents\\development\\output.txt", "w");
+    fptr1 = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\data.txt",
+        "r");
+    fptr2 = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\output.txt",
+        "w");
 
     if ((fptr1 != NULL) && (fptr2 != NULL)) {
         while ((ch = getc(fptr1)) != EOF) {

@@ -9,7 +9,10 @@ int main(void)
     FILE *fptr;
     char str[MAX];
     int bytes;
-    fptr = fopen("C:\\Users\\sam88\\Documents\\development\\output.txt", "r");
+    fptr = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\output.txt",
+        "r");
 
     while (!feof(fptr)) { /* 如果還沒讀到檔尾 */
         bytes = fread(str, sizeof(char), MAX, fptr);

@@ -8,7 +8,10 @@ int main(void)
     char ch;       /* 宣告字元變數ch，用來接收讀取的字元 */
     int count = 0; /* 宣告整數count，用來計算檔案的字元數 */
 
-    fptr = fopen("C:\\Users\\sam88\\Documents\\development\\data.txt", "r");
+    fptr = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\data.txt",
+        "r");
     if (fptr != NULL) {
         while ((ch = getc(fptr)) != EOF) {
             printf("%c", ch);

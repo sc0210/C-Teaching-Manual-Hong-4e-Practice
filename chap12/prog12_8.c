@@ -13,8 +13,10 @@ int main(void)
         int math;       // 4 bytes
     } student = {"Jenny", 96};
 
-    f1 = open("C:\\Users\\sam88\\Documents\\development\\score.bin",
-              O_CREAT | O_WRONLY | O_BINARY, S_IREAD);
+    f1 = open(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\score.bin",
+        O_CREAT | O_WRONLY | O_BINARY, S_IREAD);
     if (f1 != -1) {
         write(f1, &student, sizeof(student));
         close(f1);

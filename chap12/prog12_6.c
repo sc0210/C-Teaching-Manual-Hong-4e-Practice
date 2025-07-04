@@ -9,7 +9,10 @@ int main(void)
 
     FILE *fptr;
 
-    fptr = fopen("C:\\Users\\sam88\\Documents\\development\\number.bin", "wb");
+    fptr = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\number.bin",
+        "wb");
     fwrite(&a, sizeof(double), 1, fptr);
     fwrite(&b, sizeof(double), 1, fptr);
     fwrite(arr, sizeof(int), 3, fptr);

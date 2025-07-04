@@ -7,8 +7,14 @@ int main(void)
     FILE *fptr1, *fptr2; /* 宣告指向檔案的指標fptr1, fptr2 */
     char ch;             /* 宣告字元變數ch，用來接收讀取的字元 */
 
-    fptr1 = fopen("C:\\Users\\sam88\\Documents\\development\\data.txt", "r");
-    fptr2 = fopen("C:\\Users\\sam88\\Documents\\development\\output.txt", "w");
+    fptr1 = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\data.txt",
+        "r");
+    fptr2 = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\output.txt",
+        "w");
 
     if ((fptr1 != NULL) && (fptr2 != NULL)) {
         while ((ch = getc(fptr1)) != EOF) {

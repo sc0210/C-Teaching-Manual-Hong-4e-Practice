@@ -8,7 +8,10 @@ int main(void)
     int i, arr[3];
     FILE *fptr;
 
-    fptr = fopen("C:\\Users\\sam88\\Documents\\development\\number.bin", "rb");
+    fptr = fopen(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\number.bin",
+        "rb");
     fread(&a, sizeof(double), 1, fptr);
     fread(&b, sizeof(double), 1, fptr);
     fread(arr, sizeof(int), 3, fptr);

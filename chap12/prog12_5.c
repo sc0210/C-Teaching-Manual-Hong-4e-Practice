@@ -12,10 +12,14 @@ int main(void)
     char buffer[SIZE];
     int f1, f2, bytes;
 
-    f1 = open("C:\\Users\\sam88\\Documents\\development\\data.txt",
-              O_RDONLY | O_TEXT);
-    f2 = creat("C:\\Users\\sam88\\Documents\\development\\output2.txt",
-               S_IWRITE);
+    f1 = open(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\data.txt",
+        O_RDONLY | O_TEXT);
+    f2 = creat(
+        "C:\\Users\\sam88\\Documents\\development\\C-"
+        "langugage\\chap12\\data\\output2.txt",
+        S_IWRITE);
 
     if ((f1 != -1) && (f2 != -1)) /* 測試檔案使否開啟成功 */
     {
